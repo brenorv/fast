@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  --bg: radial-gradient(circle at 72% 46%, #09162b 0%, #050912 30%, #02040a 70%, #010207 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #010207;
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background-image: var(--bg);
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.copy {
+  min-height: 100%;
+}
+
+.visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+#holo {
+  width: min(58vw, 1200px);
+  max-height: 84vh;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+  image-rendering: auto;
+  filter: drop-shadow(0 0 28px rgba(24, 140, 255, 0.22));
+}
